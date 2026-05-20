@@ -19,5 +19,180 @@
         "status": "ERROR",
         "date": "26-05-18 20:56:23",
         "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 20:07:33",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 20:07:34",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 20:07:34",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 20:27:27",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 20:27:28",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 20:27:28",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 20:28:34",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 20:28:35",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 20:28:35",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 20:29:19",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 20:29:20",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 20:29:20",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 20:30:45",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 20:30:45",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 20:30:46",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 20:33:35",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 20:33:36",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 20:33:36",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 20:36:20",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 20:36:22",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 20:36:22",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Sitio falso 2",
+        "url": "https://sitiofalso1234567.com",
+        "status": "ERROR",
+        "date": "26-05-19 21:16:56",
+        "message": "HTTPSConnectionPool(host='sitiofalso1234567.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso1234567.com', port=443): Failed to resolve 'sitiofalso1234567.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+        "service": "Google",
+        "url": "https://google.com",
+        "status": "UP",
+        "date": "26-05-19 21:16:58",
+        "code": 200
+    },
+    {
+        "service": "GitHub",
+        "url": "https://github.com",
+        "status": "UP",
+        "date": "26-05-19 21:16:58",
+        "code": 200
+    },
+    {
+        "service": "Sitio falso",
+        "url": "https://sitiofalso123456.com",
+        "status": "ERROR",
+        "date": "26-05-19 21:16:58",
+        "message": "HTTPSConnectionPool(host='sitiofalso123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sitiofalso123456.com', port=443): Failed to resolve 'sitiofalso123456.com' ([Errno 11001] getaddrinfo failed)\"))"
     }
 ]

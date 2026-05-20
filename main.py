@@ -1,4 +1,5 @@
 import json
+import requests
 from datetime import datetime
 from utils.monitor import check_service
 
@@ -15,6 +16,13 @@ def save_log(log):
     with open("logs.json", "w") as file:
         json.dump(logs, file, indent=4)
     
+def enviar_a_n8n(url,data):
+    try:
+        response = requests.post(url, json=data)
+        print("Enviado a n8n: ", response.status_code)
+    except Exception as e:
+        print("Error enviando a n8n: ",e)
+
 def main():
     services = load_services()
 
@@ -31,6 +39,7 @@ def main():
         if "message" in result:
             log["message"] = result["message"]
         save_log(log)
+        enviar_a_n8n("http://localhost:5678/webhook-test/monitor-alert",log)
 
         print(f"\nServicio: {service['name']}")
         print(f"URL: {service['url']}")
