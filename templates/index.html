@@ -75,9 +75,15 @@
         location.reload();
     }, 10000);
 </script>
-<canvas id="statusChart"></canvas>
-<script src="https://cdn.jsdelivr.net/npm/chart.js">
-    const cty = document.getElementById('statusChart');
+<div class="container mt-4">
+    <div class="col-md-4 mx-auto"">
+        <canvas id="statusChart"></canvas>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // @ts-ignore
+    const ctx = document.getElementById('statusChart');
     new Chart(ctx, {
         type: 'doughnut',
         data: {
