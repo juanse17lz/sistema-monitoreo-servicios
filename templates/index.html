@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Monitoreo</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h1 class="mb-4">
+        Sistema de Monitoreo de Servicios
+    </h1>
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card text-center shadow">
+                <div class="card-body">
+                    <h5>Total Registros</h5>
+                    <h2>{{ total }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center shadow border-success">
+                <div class="card-body">
+                    <h5>Servicios UP</h5>
+                    <h2 class="text-success">{{ up }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center shadow border-danger">
+                <div class="card-body">
+                    <h5>Servicios ERROR</h5>
+                    <h2 class="text-danger">{{ error }}</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Servicio</th>
+                <th>Estado</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td>{{ log.id }}</td>
+                <td>{{ log.service }}</td>
+                <td>
+                    {% if log.status == "UP" %}
+                        <span class="badge bg-success">
+                            {{ log.status }}
+                        </span>
+                    {% else %}
+                        <span class="=badge bg-danger">
+                            {{ log.status }}
+                        </span>
+                    {% endif %}
+                </td>
+                <td>{{ log.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    setTimeout(() => {
+        location.reload();
+    }, 10000);
+</script>
+<canvas id="statusChart"></canvas>
+<script>
+    const cty = document.getElementById('statusChart');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['UP','ERROR'],
+            datasets: [{
+                data: [{{ up_count }}, {{ error_count }}]
+            }]
+        }
+    });
+</script>
+</body>
+</html>

@@ -2,10 +2,18 @@ import json
 import requests
 from datetime import datetime
 from utils.monitor import check_service
+from database.database import *
 
 def load_services():
-    with open("services.json", "r") as file:
-        return json.load(file)
+    try:
+        with open("services.json", "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print("Archivo de servicios no encontrado")
+        return []
+    except Exception as error:
+        print(f"Error cargando servicios: {error}")
+        return []
     
 def save_log(log):
     with open("logs.json", "r") as file:
@@ -24,6 +32,7 @@ def enviar_a_n8n(url,data):
         print("Error enviando a n8n: ",e)
 
 def main():
+    create_database()
     services = load_services()
 
     for service in services:
@@ -39,6 +48,7 @@ def main():
         if "message" in result:
             log["message"] = result["message"]
         save_log(log)
+        guardar_en_database(log)
         enviar_a_n8n("http://localhost:5678/webhook-test/monitor-alert",log)
 
         print(f"\nServicio: {service['name']}")
