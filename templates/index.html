@@ -25,7 +25,7 @@
             <div class="card text-center shadow border-success">
                 <div class="card-body">
                     <h5>Servicios UP</h5>
-                    <h2 class="text-success">{{ up }}</h2>
+                    <h2 class="text-success">{{ up_count }}</h2>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="card text-center shadow border-danger">
                 <div class="card-body">
                     <h5>Servicios ERROR</h5>
-                    <h2 class="text-danger">{{ error }}</h2>
+                    <h2 class="text-danger">{{ error_count }}</h2>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                             {{ log.status }}
                         </span>
                     {% else %}
-                        <span class="=badge bg-danger">
+                        <span class="badge bg-danger">
                             {{ log.status }}
                         </span>
                     {% endif %}
@@ -76,7 +76,7 @@
     }, 10000);
 </script>
 <canvas id="statusChart"></canvas>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js">
     const cty = document.getElementById('statusChart');
     new Chart(ctx, {
         type: 'doughnut',

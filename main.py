@@ -16,8 +16,11 @@ def load_services():
         return []
     
 def save_log(log):
-    with open("logs.json", "r") as file:
-        logs = json.load(file)
+    try:
+        with open("logs.json", "r") as file:
+            logs = json.load(file)
+    except FileNotFoundError:
+        logs = []
 
     logs.append(log)
 

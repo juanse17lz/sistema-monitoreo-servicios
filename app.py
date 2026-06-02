@@ -23,8 +23,8 @@ def dashboard():
     logs = cursor.fetchall()
 
     total = len(logs)
-    up_count = sum(1 for log in logs if log[3] == "UP")
-    error_count = sum(1 for log in logs if log[3] == "ERROR")
+    up_count = sum(1 for log in logs if log['status'] == "UP")
+    error_count = sum(1 for log in logs if log['status'] == "ERROR")
 
     conn.close()
 
